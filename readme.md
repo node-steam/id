@@ -291,7 +291,7 @@ id.format;
 > 'steam64'
 ```
 
-## Differences from [node-steam](https://github.com/DoctorMcKay/node-steamid)
+## Differences from [node-steamid](https://github.com/DoctorMcKay/node-steamid)
 
  - ES6 // Typescript syntax
  - Typescript definitions
