@@ -71,13 +71,15 @@
 					<a href="https://www.npmjs.com/package/@node-steam/id"><img src="https://img.shields.io/npm/dt/@node-steam/id.svg?style=flat-square" alt="Downloads"></a>
 					<a href="https://www.npmjs.com/package/@node-steam/id"><img src="https://img.shields.io/github/license/node-steam/id.svg?style=flat-square" alt="License"></a>
 				<a href="https://runkit.com/npm/@node-steam/id"><img src="https://img.shields.io/badge/try%20on%20runkit-id-blue.svg?style=flat-square" alt="Runkit"></a></p>
-				<p><a href="https://www.npmjs.com/package/@node-steam/id"><img src="https://nodei.co/npm/@node-steam/id.png?downloads=true&amp;downloadRank=true&amp;stars=true" alt="npm statistics"></a></p>
+				<p><a href="https://www.npmjs.com/package/@node-steam/id"><img src="https://nodei.co/npm/@node-steam/id.png?downloads=true&downloadRank=true&stars=true" alt="npm statistics"></a></p>
 				<p><strong>ID</strong> is a module to make <a href="https://developer.valvesoftware.com/wiki/SteamID">SteamID</a> usage and conversion easy using Typescript.</p>
 				<blockquote>
 					<p>Heavily inspired by <a href="https://github.com/DoctorMcKay/node-steamid">node-steamid</a></p>
 					<p>(<code>&lt;= v1.0.0</code> can be used as a drop-in replacement)</p>
 				</blockquote>
-				<h2 id="overview">Overview</h2>
+				<a href="#overview" id="overview" style="color: inherit; text-decoration: none;">
+					<h2>Overview</h2>
+				</a>
 				<p>A SteamID is made up of four parts: it&#39;s <strong>Universe</strong>, it&#39;s <strong>Type</strong>, it&#39;s <strong>Instance</strong>, and it&#39;s <strong>Account ID</strong>.</p>
 				<ul>
 					<li><p><strong>Universe</strong>: Currently, there are 5 universes. A universe is a unique instance of Steam. You&#39;ll probably only be interacting with the public universe, which is the regular Steam. Only Valve employees can access non-public universes.</p>
@@ -98,11 +100,15 @@
 					<li><p><strong>Account ID</strong>: This represents a unique account of the persona</p>
 					</li>
 				</ul>
-				<h2 id="installation">Installation</h2>
+				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+					<h2>Installation</h2>
+				</a>
 				<p>You can install <strong>ID</strong> through the command line by using the following command:</p>
-				<pre><code>yarn add @<span class="hljs-keyword">node</span><span class="hljs-title">-steam</span>/id
-</code></pre><h2 id="usage-">Usage:</h2>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> SteamID <span class="hljs-keyword">from</span> <span class="hljs-string">'@node-steam/id'</span>;
+				<pre><code>yarn add @<span class="hljs-keyword">node</span><span class="hljs-title">-steam</span>/id</code></pre>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h2>Usage:</h2>
+				</a>
+				<pre><code class="language-javascript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> SteamID <span class="hljs-keyword">from</span> <span class="hljs-string">'@node-steam/id'</span>;
 
 <span class="hljs-comment">// or</span>
 
@@ -112,146 +118,168 @@
     Instance,
     Type,
     Universe,
-} <span class="hljs-keyword">from</span> <span class="hljs-string">'@node-steam/id'</span>;
-</code></pre>
-				<h2 id="creation">Creation</h2>
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'@node-steam/id'</span>;</code></pre>
+				<a href="#creation" id="creation" style="color: inherit; text-decoration: none;">
+					<h2>Creation</h2>
+				</a>
 				<p>You can create a SteamID object from a SteamID2, a SteamID3, a SteamID64, a Account ID or from the four parts that make up a SteamID:</p>
-				<h4 id="steamid2">SteamID2</h4>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'STEAM_0:0:11101'</span>);
-</code></pre>
-				<h4 id="steamid3">SteamID3</h4>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'[U:1:22202]'</span>);
-</code></pre>
-				<h4 id="steamid64">SteamID64</h4>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);
-</code></pre>
-				<h4 id="parts">Parts</h4>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> id     = <span class="hljs-keyword">new</span> ID();
+				<a href="#steamid2" id="steamid2" style="color: inherit; text-decoration: none;">
+					<h4>SteamID2</h4>
+				</a>
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'STEAM_0:0:11101'</span>);</code></pre>
+				<a href="#steamid3" id="steamid3" style="color: inherit; text-decoration: none;">
+					<h4>SteamID3</h4>
+				</a>
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'[U:1:22202]'</span>);</code></pre>
+				<a href="#steamid64" id="steamid64" style="color: inherit; text-decoration: none;">
+					<h4>SteamID64</h4>
+				</a>
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);</code></pre>
+				<a href="#parts" id="parts" style="color: inherit; text-decoration: none;">
+					<h4>Parts</h4>
+				</a>
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> id     = <span class="hljs-keyword">new</span> ID();
 id.universe  = Universe.PUBLIC;
 id.type      = Type.INDIVIDUAL;
 id.instance  = Instance.DESKTOP;
-id.accountid = <span class="hljs-number">22202</span>;
-</code></pre>
-				<h4 id="accountid">AccountID</h4>
-				<pre><code class="lang-js"><span class="hljs-keyword">const</span> id = fromAccountID(<span class="hljs-number">22202</span>);
-</code></pre>
-				<h2 id="documentation-">Documentation:</h2>
+id.accountid = <span class="hljs-number">22202</span>;</code></pre>
+				<a href="#accountid" id="accountid" style="color: inherit; text-decoration: none;">
+					<h4>AccountID</h4>
+				</a>
+				<pre><code class="language-js"><span class="hljs-keyword">const</span> id = fromAccountID(<span class="hljs-number">22202</span>);</code></pre>
+				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
+					<h2>Documentation:</h2>
+				</a>
 				<blockquote>
 					<p><strong><a href="https://node-steam.github.io/id/">Generated Documentation</a></strong></p>
 				</blockquote>
-				<h4 id="-new-id-id-string-"><code>new ID(id?: string)</code></h4>
+				<a href="#codenew-idid-stringcode" id="codenew-idid-stringcode" style="color: inherit; text-decoration: none;">
+					<h4><code>new ID(id?: string)</code></h4>
+				</a>
 				<blockquote>
 					<p>API class</p>
 				</blockquote>
-				<h4 id="-id-isvalid-"><code>ID.isValid()</code></h4>
+				<a href="#codeidisvalidcode" id="codeidisvalidcode" style="color: inherit; text-decoration: none;">
+					<h4><code>ID.isValid()</code></h4>
+				</a>
 				<blockquote>
 					<p>Check whether the ID is valid or not</p>
 				</blockquote>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);
 
 id.isValid();
 
-&gt; <span class="hljs-literal">true</span>
-</code></pre>
-				<h4 id="-id-isgroupchat-"><code>ID.isGroupChat()</code></h4>
+&gt; <span class="hljs-literal">true</span></code></pre>
+				<a href="#codeidisgroupchatcode" id="codeidisgroupchatcode" style="color: inherit; text-decoration: none;">
+					<h4><code>ID.isGroupChat()</code></h4>
+				</a>
 				<blockquote>
 					<p>Check whether the ID is tied to a steam groupchat or not</p>
 				</blockquote>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);
 
 id.isGroupChat();
 
-&gt; <span class="hljs-literal">false</span>
-</code></pre>
-				<h4 id="-id-islobby-"><code>ID.isLobby()</code></h4>
+&gt; <span class="hljs-literal">false</span></code></pre>
+				<a href="#codeidislobbycode" id="codeidislobbycode" style="color: inherit; text-decoration: none;">
+					<h4><code>ID.isLobby()</code></h4>
+				</a>
 				<blockquote>
 					<p>Check whether the ID is a steam lobby or not</p>
 				</blockquote>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);
 
 id.isLobby();
 
-&gt; <span class="hljs-literal">false</span>
-</code></pre>
-				<h4 id="-id-getsteamid2-format-boolean-"><code>ID.getSteamID2(format?: boolean)</code></h4>
+&gt; <span class="hljs-literal">false</span></code></pre>
+				<a href="#codeidgetsteamid2format-booleancode" id="codeidgetsteamid2format-booleancode" style="color: inherit; text-decoration: none;">
+					<h4><code>ID.getSteamID2(format?: boolean)</code></h4>
+				</a>
 				<blockquote>
 					<p>Render the ID in the Steam2 format</p>
 					<p>Aliases: <code>get2, steam2, getSteam2RenderedID</code></p>
 				</blockquote>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);
 
 id.getSteamID2();
 
-&gt; <span class="hljs-string">'STEAM_0:0:11101'</span>
-</code></pre>
-				<h4 id="-id-getsteamid3-"><code>ID.getSteamID3()</code></h4>
+&gt; <span class="hljs-string">'STEAM_0:0:11101'</span></code></pre>
+				<a href="#codeidgetsteamid3code" id="codeidgetsteamid3code" style="color: inherit; text-decoration: none;">
+					<h4><code>ID.getSteamID3()</code></h4>
+				</a>
 				<blockquote>
 					<p>Render the ID in the Steam3 format</p>
 					<p>Aliases: <code>get3, steam3, getSteam3RenderedID</code></p>
 				</blockquote>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);
 
 id.getSteamID3();
 
-&gt; <span class="hljs-string">'[U:1:22202]'</span>
-</code></pre>
-				<h4 id="-id-getsteamid64-"><code>ID.getSteamID64()</code></h4>
+&gt; <span class="hljs-string">'[U:1:22202]'</span></code></pre>
+				<a href="#codeidgetsteamid64code" id="codeidgetsteamid64code" style="color: inherit; text-decoration: none;">
+					<h4><code>ID.getSteamID64()</code></h4>
+				</a>
 				<blockquote>
 					<p>Render the ID in the 64-bit format</p>
 					<p>Aliases: <code>get64, steam64</code></p>
 				</blockquote>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'STEAM_0:0:11101'</span>);
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'STEAM_0:0:11101'</span>);
 
 id.getSteamID64();
 
-&gt; <span class="hljs-string">'76561197960287930'</span>
-</code></pre>
-				<h4 id="-fromaccountid-id-number-"><code>fromAccountID(id: number)</code></h4>
+&gt; <span class="hljs-string">'76561197960287930'</span></code></pre>
+				<a href="#codefromaccountidid-numbercode" id="codefromaccountidid-numbercode" style="color: inherit; text-decoration: none;">
+					<h4><code>fromAccountID(id: number)</code></h4>
+				</a>
 				<blockquote>
 					<p>Create a ID object from an individual account ID</p>
 					<p>Aliases: <code>fromIndividualAccountID</code></p>
 				</blockquote>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> id = fromAccountID(<span class="hljs-number">22202</span>);
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> id = fromAccountID(<span class="hljs-number">22202</span>);
 
 id.getSteamID64();
 
-&gt; <span class="hljs-string">'76561197960287930'</span>
-</code></pre>
-				<h4 id="-id-getuniverse-"><code>ID.getUniverse()</code></h4>
+&gt; <span class="hljs-string">'76561197960287930'</span></code></pre>
+				<a href="#codeidgetuniversecode" id="codeidgetuniversecode" style="color: inherit; text-decoration: none;">
+					<h4><code>ID.getUniverse()</code></h4>
+				</a>
 				<blockquote>
 					<p>Returns the Universe of the current ID</p>
 				</blockquote>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);
 
 id.getUniverse();
 
-&gt; <span class="hljs-string">'PUBLIC'</span>
-</code></pre>
-				<h4 id="-id-gettype-"><code>ID.getType()</code></h4>
+&gt; <span class="hljs-string">'PUBLIC'</span></code></pre>
+				<a href="#codeidgettypecode" id="codeidgettypecode" style="color: inherit; text-decoration: none;">
+					<h4><code>ID.getType()</code></h4>
+				</a>
 				<blockquote>
 					<p>Returns the Type of the current ID</p>
 				</blockquote>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);
 
 id.getType();
 
-&gt; <span class="hljs-string">'INDIVIDUAL'</span>
-</code></pre>
-				<h4 id="-id-getinstance-"><code>ID.getInstance()</code></h4>
+&gt; <span class="hljs-string">'INDIVIDUAL'</span></code></pre>
+				<a href="#codeidgetinstancecode" id="codeidgetinstancecode" style="color: inherit; text-decoration: none;">
+					<h4><code>ID.getInstance()</code></h4>
+				</a>
 				<blockquote>
 					<p>Returns the Instance of the current ID</p>
 				</blockquote>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);
 
 id.getInstance();
 
-&gt; <span class="hljs-string">'DESKTOP'</span>
-</code></pre>
-				<h4 id="-id-getuniverseid-id-universe-"><code>ID.getUniverseID() | ID.universe</code></h4>
+&gt; <span class="hljs-string">'DESKTOP'</span></code></pre>
+				<a href="#codeidgetuniverseid--iduniversecode" id="codeidgetuniverseid--iduniversecode" style="color: inherit; text-decoration: none;">
+					<h4><code>ID.getUniverseID() | ID.universe</code></h4>
+				</a>
 				<blockquote>
 					<p>Returns the Universe ID of the current ID</p>
 				</blockquote>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);
 
 id.getUniverseID();
 
@@ -259,13 +287,14 @@ id.getUniverseID();
 
 id.universe;
 
-&gt; <span class="hljs-number">1</span>
-</code></pre>
-				<h4 id="-id-gettypeid-id-type-"><code>ID.getTypeID() | ID.type</code></h4>
+&gt; <span class="hljs-number">1</span></code></pre>
+				<a href="#codeidgettypeid--idtypecode" id="codeidgettypeid--idtypecode" style="color: inherit; text-decoration: none;">
+					<h4><code>ID.getTypeID() | ID.type</code></h4>
+				</a>
 				<blockquote>
 					<p>Returns the Type ID of the current ID</p>
 				</blockquote>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);
 
 id.getTypeID();
 
@@ -273,13 +302,14 @@ id.getTypeID();
 
 id.type;
 
-&gt; <span class="hljs-number">1</span>
-</code></pre>
-				<h4 id="-id-getinstanceid-id-instance-"><code>ID.getInstanceID() | ID.instance</code></h4>
+&gt; <span class="hljs-number">1</span></code></pre>
+				<a href="#codeidgetinstanceid--idinstancecode" id="codeidgetinstanceid--idinstancecode" style="color: inherit; text-decoration: none;">
+					<h4><code>ID.getInstanceID() | ID.instance</code></h4>
+				</a>
 				<blockquote>
 					<p>Returns the Instance ID of the current ID</p>
 				</blockquote>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);
 
 id.getInstanceID();
 
@@ -287,13 +317,14 @@ id.getInstanceID();
 
 id.instance;
 
-&gt; <span class="hljs-number">1</span>
-</code></pre>
-				<h4 id="-id-getaccountid-id-accountid-"><code>ID.getAccountID() | ID.accountid</code></h4>
+&gt; <span class="hljs-number">1</span></code></pre>
+				<a href="#codeidgetaccountid--idaccountidcode" id="codeidgetaccountid--idaccountidcode" style="color: inherit; text-decoration: none;">
+					<h4><code>ID.getAccountID() | ID.accountid</code></h4>
+				</a>
 				<blockquote>
 					<p>Returns the Account ID of the current ID</p>
 				</blockquote>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);
 
 id.getAccountID();
 
@@ -301,13 +332,14 @@ id.getAccountID();
 
 id.accountid;
 
-&gt; <span class="hljs-number">22202</span>
-</code></pre>
-				<h4 id="-id-getformat-id-format-"><code>ID.getFormat() | ID.format</code></h4>
+&gt; <span class="hljs-number">22202</span></code></pre>
+				<a href="#codeidgetformat--idformatcode" id="codeidgetformat--idformatcode" style="color: inherit; text-decoration: none;">
+					<h4><code>ID.getFormat() | ID.format</code></h4>
+				</a>
 				<blockquote>
 					<p>Returns the format that was used to generate the current ID</p>
 				</blockquote>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> id = <span class="hljs-keyword">new</span> ID(<span class="hljs-string">'76561197960287930'</span>);
 
 id.getFormat();
 
@@ -315,9 +347,10 @@ id.getFormat();
 
 id.format;
 
-&gt; <span class="hljs-string">'steam64'</span>
-</code></pre>
-				<h2 id="differences-from-node-steamid-https-github-com-doctormckay-node-steamid-">Differences from <a href="https://github.com/DoctorMcKay/node-steamid">node-steamid</a></h2>
+&gt; <span class="hljs-string">'steam64'</span></code></pre>
+				<a href="#differences-from-a-hrefhttpsgithubcomdoctormckaynode-steamidnode-steamida" id="differences-from-a-hrefhttpsgithubcomdoctormckaynode-steamidnode-steamida" style="color: inherit; text-decoration: none;">
+					<h2>Differences from <a href="https://github.com/DoctorMcKay/node-steamid">node-steamid</a></h2>
+				</a>
 				<ul>
 					<li>ES6 // Typescript syntax</li>
 					<li>Typescript definitions</li>
@@ -329,24 +362,31 @@ id.format;
 					<p>(Basically there is no real need to switch - the definitions were just needed for other related projects)</p>
 					<p>It is currently backward-compatible // works as drop-in replacement but the compatibility code will be removed in future versions!</p>
 				</blockquote>
-				<h2 id="contributors">Contributors</h2>
+				<a href="#contributors" id="contributors" style="color: inherit; text-decoration: none;">
+					<h2>Contributors</h2>
+				</a>
 				<ul>
 					<li>Silas Rech aka. <strong><a href="mailto:silas.rech@protonmail.com">lenovouser</a></strong></li>
 				</ul>
-				<h2 id="contributing-">Contributing:</h2>
+				<a href="#contributing" id="contributing" style="color: inherit; text-decoration: none;">
+					<h2>Contributing:</h2>
+				</a>
 				<p>Interested in contributing to <strong>ID</strong>? Contributions are welcome, and are accepted via pull requests. Please <a href="contributing.md">review these guidelines</a> before submitting any pull requests.</p>
-				<h3 id="help-">Help:</h3>
+				<a href="#help" id="help" style="color: inherit; text-decoration: none;">
+					<h3>Help:</h3>
+				</a>
 				<p><strong>Installing dependencies:</strong></p>
-				<pre><code><span class="hljs-attribute">yarn</span>
-</code></pre><p><strong>Compile:</strong></p>
-				<pre><code><span class="hljs-attribute">yarn compile</span>
-</code></pre><p><strong>Test:</strong></p>
-				<pre><code>yarn <span class="hljs-built_in">test</span>
-</code></pre><p><strong>Generate Docs:</strong></p>
-				<pre><code><span class="hljs-attribute">yarn docs</span>
-</code></pre><h2 id="tests-">Tests:</h2>
+				<pre><code><span class="hljs-attribute">yarn</span></code></pre><p><strong>Compile:</strong></p>
+				<pre><code><span class="hljs-attribute">yarn compile</span></code></pre><p><strong>Test:</strong></p>
+				<pre><code>yarn <span class="hljs-built_in">test</span></code></pre><p><strong>Generate Docs:</strong></p>
+				<pre><code><span class="hljs-attribute">yarn docs</span></code></pre>
+				<a href="#tests" id="tests" style="color: inherit; text-decoration: none;">
+					<h2>Tests:</h2>
+				</a>
 				<p>This module is thoroughly tested with <strong><a href="https://github.com/avajs/ava">ava</a></strong></p>
-				<h2 id="license-">License:</h2>
+				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
+					<h2>License:</h2>
+				</a>
 				<p>Code licensed under <a href="license.md">MIT</a>, documentation under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
 			</div>
 		</div>
@@ -360,13 +400,13 @@ id.format;
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum">
+					<li class=" tsd-kind-enum tsd-is-external">
 						<a href="enums/instance.html" class="tsd-kind-icon">Instance</a>
 					</li>
-					<li class=" tsd-kind-enum">
+					<li class=" tsd-kind-enum tsd-is-external">
 						<a href="enums/type.html" class="tsd-kind-icon">Type</a>
 					</li>
-					<li class=" tsd-kind-enum">
+					<li class=" tsd-kind-enum tsd-is-external">
 						<a href="enums/universe.html" class="tsd-kind-icon">Universe</a>
 					</li>
 					<li class=" tsd-kind-class">
@@ -392,6 +432,7 @@ id.format;
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -440,7 +481,7 @@ id.format;
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="assets/js/main.js"></script>
