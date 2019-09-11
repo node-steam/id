@@ -70,5 +70,6 @@
   },
   "dependencies": {
     "cuint": "^0.2.2"
+    "@types/cuint": "0.2.1",
   }
 }
