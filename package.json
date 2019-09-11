@@ -7,7 +7,7 @@
   "homepage": "https://github.com/node-steam/id",
   "bugs": "https://github.com/node-steam/id/issues",
   "repository": {
-    "url": "https://github.com/node-steam/id",
+    "url": "https://github.com/node-steam/id.git",
     "type": "git"
   },
   "author": "N|Steam",
@@ -25,7 +25,11 @@
     "example/*.js"
   ],
   "contributors": [
-    "Silas Rech <silas.rech@protonmail.com> (https://lenovouser.me)"
+    {
+      "name": "Silas Rech",
+      "email": "silas.rech@protonmail.com",
+      "url": "https://lenovouser.me"
+    }
   ],
   "runkitExampleFilename": "example/runkit.js",
   "engines": {
