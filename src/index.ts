@@ -156,7 +156,7 @@ export class ID {
      * @param {boolean} [format=false] - true if you want to use 1 in place of the leading 0 for the public universe
      * @return {string}
      */
-    public getSteamID2 = (format: boolean): string => {
+    public getSteamID2 = (format?: boolean): string => {
         if (this.type !== Type.INDIVIDUAL) {
             throw new Error(`Can't get Steam2 rendered ID for non-individual ID`);
         } else {
