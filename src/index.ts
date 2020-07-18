@@ -99,7 +99,7 @@ export class ID {
         } else if (isNaN(input)) {
             throw new Error(`Unknown SteamID input format "${input}"`);
         } else {
-            const x = new UInt64(input, 10);
+            const x = new UInt64(input.toString(), 10);
             this.format    = 'steam64';
             this.accountid = (x.toNumber() & 0xFFFFFFFF) >>> 0;
             this.instance  = x.shiftRight(32).toNumber() & 0xFFFFF;
