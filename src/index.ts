@@ -67,14 +67,14 @@ export class ID {
             return;
         }
 
-        if (input.match(regex.steam2)) {
+        if (regex.steam2.test(input)) {
             const matches  = input.match(regex.steam2);
             this.format    = 'steam2';
             this.universe  = parseInt(matches[1], 10) || Universe.PUBLIC;
             this.type      = Type.INDIVIDUAL;
             this.instance  = Instance.DESKTOP;
             this.accountid = (parseInt(matches[3], 10) * 2) + parseInt(matches[2], 10);
-        } else if (input.match(regex.steam3)) {
+        } else if (regex.steam3.test(input)) {
             const matches  = input.match(regex.steam3);
             const char     = matches[1];
             this.format    = 'steam3';
