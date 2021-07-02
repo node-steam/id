@@ -1,6 +1,6 @@
 {
   "name": "@node-steam/id",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Module to make SteamID usage and conversion easy",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
